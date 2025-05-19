@@ -1,0 +1,29 @@
+body {
+    background-color: gold;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Inter';
+}
+p {
+    color: blueviolet;
+}
+
+a:link{
+    text-decoration: none;
+    color: aquamarine
+}
+
+a:visited{
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 208);
+    font-weight: bold;
+}
+
+.formatheader {
+    font-size: larger;
+}
