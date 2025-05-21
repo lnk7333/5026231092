@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+// ====================== IMPORT CONTROLLER =======================
 use App\Http\Controllers\Link;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
     $nama ='Fawwaz 092';
@@ -43,3 +47,17 @@ Route::get('/kalkulator', function () {
 Route::get('/pendaftaran-ise', function () {
     return view('js2');
 });
+
+// ================= 21/05/2025 ======================
+
+Route::get('/dosen', [Link::class,'index']);
+Route::get('/pegawai/{nama}', [PegawaiController::class,'index']);
+
+// ROUTE FORMULIR
+Route::get('/formulir', [PegawaiController::class,'formulir']);
+Route::post('/formulir/proses', [PegawaiController::class,'proses']);
+
+// ROUTE BLOG
+Route::get('/blog', [BlogController::class,'home']);
+Route::get('/blog/tentang', [BlogController::class,'tentang']);
+Route::get('/blog/kontak', [BlogController::class,'kontak']);
