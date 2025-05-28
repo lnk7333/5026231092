@@ -50,14 +50,17 @@ Route::get('/pendaftaran-ise', function () {
 
 // ================= 21/05/2025 ======================
 
-Route::get('/dosen', [Link::class,'index']);
-Route::get('/pegawai/{nama}', [PegawaiController::class,'index']);
+//Route::get('/dosen', [Link::class,'index']);
+//Route::get('/pegawai/{nama}', [Pegawai2Controller::class,'index']);
 
 // ROUTE FORMULIR
-Route::get('/formulir', [PegawaiController::class,'formulir']);
-Route::post('/formulir/proses', [PegawaiController::class,'proses']);
+//Route::get('/formulir', [Pegawai2Controller::class,'formulir']);
+//Route::post('/formulir/proses', [Pegawai2Controller::class,'proses']);
 
 // ROUTE BLOG
 Route::get('/blog', [BlogController::class,'home']);
 Route::get('/blog/tentang', [BlogController::class,'tentang']);
 Route::get('/blog/kontak', [BlogController::class,'kontak']);
+
+// ROUTE PEGAWAI
+Route::get('/pegawai', [PegawaiController::class,'index']);
