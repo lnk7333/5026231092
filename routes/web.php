@@ -36,8 +36,8 @@ Route::get('/linktree', function () {
     return view('linktree');
 });
 
-Route::get('/template', function () {
-    return view('template');
+Route::get('/2template', function () {
+    return view('2template');
 });
 
 Route::get('/kalkulator', function () {
@@ -69,3 +69,4 @@ Route::post('/pegawai/store',[PegawaiController::class, 'store']);
 Route::get('/pegawai/edit/{id}',[PegawaiController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiController::class, 'hapus']);
+Route::get('/pegawai/cari',[PegawaiController::class, 'cari']);

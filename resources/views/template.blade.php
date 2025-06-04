@@ -1,68 +1,59 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
+    <title>Muhammad Fawwaz Ak-Amien : 5026231092</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
-  </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+            background-color: #9de2e2;
+            height: 100px;
+        }
+    </style>
+</head>
 
-  <body>
-
-    <div class="container">
-      <h1>Form Pendaftaran ISE!</h1>
-      
-      <form id="formpendaftaran" action="https://google.com" method="GET">
-        
-        NRP : 
-        <input type="text" id="nrp" class="form-control" placeholder="Silahkan Isi NRP , 10 Digit , Harus Angka , Gak Boleh Kosong">
-        <br>
-        NAMA :
-        <input type="text" id="nama" class="form-control" placeholder="Silahkan Isi Nama , Minimal 1 Digit , Gak Boleh Kosong">
-        <br>
-        <input type="submit" class="btn btn-primary" value="Daftar">
-
-      </form>
+<body>
+    <div class="jumbotron text-center mx-auto">
+        <h1>5026231092 : Muhammad Fawwaz Al-Amien</h1>
     </div>
 
-
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">All Front End</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pegawai">Pegawai</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tugas CRUD</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">EAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Latihan 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Latihan 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Latihan 3</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
     <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-3">Selamat Datang</h1>
-        <p class="lead">di Pemrograman Web</p>
-        <hr class="my-2" />
-        <p>More info</p>
-        <p class="lead">
-          <a
-            class="btn btn-primary btn-lg"
-            href="Jumbo action link"
-            role="button"
-            >Go</a
-          >
-        </p>
-      </div>
-      <div class="row">
-        <div class="col bg-danger text-white">Kolom 1</div>
-        <div class="col bg-warning">Kolom 2</div>
-        <div class="col bg-primary">Kolom 3</div>
-      </div>
-      <div class="row">
-        <div class="col-2 bg-danger text-white">Kolom 1</div>
-        <div class="col-8 bg-warning">
-          <div class="row">
-            <div class="col bg-success">Kolom 2.1</div>
-            <div class="col bg-info">Kolom 2.2</div>
-          </div>
-        </div>
-        <div class="col-2 bg-primary">Kolom 3</div>
-      </div>
-  </body>
-</html>
+        @yield('content')
+    </div>
 
-// dalam grid bisa diisi grid lain
+</body>
+
+</html>

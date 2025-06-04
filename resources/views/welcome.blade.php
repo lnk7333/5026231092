@@ -45,7 +45,7 @@
                 <br>
                 <div class="row">
                     <button>
-                        <a href="http://127.0.0.1:8000/template">Template</a>
+                        <a href="http://127.0.0.1:8000/2template">Template</a>
                     </button>
                 </div>
                 <br>
