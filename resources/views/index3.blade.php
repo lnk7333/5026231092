@@ -1,14 +1,37 @@
 @extends('template')
 
 @section('content')
+    <script>
+        function formValidation(){
+
+            var cari = document.getElementById("find").value;
+
+            if(cari.length <= 0){
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Pencarian Tidak Boleh Kosong!",
+                })
+                return false;
+            }
+
+            else{
+                Swal.fire({
+                    icon: "success",
+                    title: "Mencari!"
+                })
+                return true;
+            }
+        }
+    </script>
 
 	<h3>Data Minuman</h3>
 
 	<a href="/minuman/tambah" class="btn btn-primary"> + Tambah Minuman Baru</a>
 
     <p>Cari Data Minuman :</p>
-	<form action="/minuman/cari" method="GET">
-		<input type="text" class="form-control" name="cari" placeholder="Cari Minuman ..">
+	<form action="/minuman/cari" method="GET" onsubmit="return formValidation();">
+		<input type="text" id="find" class="form-control" name="cari" placeholder="Cari Minuman ..">
 		<input type="submit" class="btn btn-info" value="CARI">
 	</form>
 
