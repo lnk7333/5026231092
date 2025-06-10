@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Link;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\MinumanController;
 
 Route::get('/', function () {
     $nama ='Fawwaz 092';
@@ -70,3 +71,11 @@ Route::get('/pegawai/edit/{id}',[PegawaiController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiController::class, 'cari']);
+
+Route::get('/minuman',[MinumanController::class, 'index']);
+Route::get('/minuman/tambah',[MinumanController::class, 'tambah']);
+Route::post('/minuman/store',[MinumanController::class, 'store']);
+Route::get('/minuman/edit/{id}',[MinumanController::class, 'edit']);
+Route::post('/minuman/update',[MinumanController::class, 'update']);
+Route::get('/minuman/hapus/{id}',[MinumanController::class, 'hapus']);
+Route::get('/minuman/cari',[MinumanController::class, 'cari']);
