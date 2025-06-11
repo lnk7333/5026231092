@@ -7,6 +7,7 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\MinumanController;
+use App\Http\Controllers\KaryawanController;
 
 Route::get('/', function () {
     $nama ='Fawwaz 092';
@@ -72,6 +73,7 @@ Route::post('/pegawai/update',[PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiController::class, 'cari']);
 
+// TUGAS CRUD  PER ANAK
 Route::get('/minuman',[MinumanController::class, 'index']);
 Route::get('/minuman/tambah',[MinumanController::class, 'tambah']);
 Route::post('/minuman/store',[MinumanController::class, 'store']);
@@ -79,3 +81,12 @@ Route::get('/minuman/edit/{id}',[MinumanController::class, 'edit']);
 Route::post('/minuman/update',[MinumanController::class, 'update']);
 Route::get('/minuman/hapus/{id}',[MinumanController::class, 'hapus']);
 Route::get('/minuman/cari',[MinumanController::class, 'cari']);
+
+// TUGAS CRUD LATIHAN EAS
+Route::get('/karyawan',[KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah',[KaryawanController::class, 'tambah']);
+Route::post('/karyawan/store',[KaryawanController::class, 'store']);
+Route::get('/karyawan/edit/{id}',[KaryawanController::class, 'edit']);
+Route::post('/karyawan/update',[KaryawanController::class, 'update']);
+Route::get('/karyawan/hapus/{id}',[KaryawanController::class, 'hapus']);
+Route::get('/karyawan/cari',[KaryawanController::class, 'cari']);
