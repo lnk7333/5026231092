@@ -9,6 +9,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\MinumanController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\NilaiController;
 
 Route::get('/', function () {
     $nama ='Fawwaz 092';
@@ -97,3 +98,10 @@ Route::get('/keranjang', [KeranjangController::class, 'index']);
 Route::get('/keranjang/tambah', [KeranjangController::class, 'tambah1']);
 Route::post('/keranjang/store', [KeranjangController::class, 'store1']);
 Route::get('/keranjang/hapus/{id}', [KeranjangController::class, 'hapus1']);
+
+// EAS BACKEND KODE SOAL "NILAI"
+Route::get('/eas', [NilaiController::class, 'index']);
+Route::get('/eas/tambah', [NilaiController::class, 'tambah']);
+Route::post('/eas/store', [NilaiController::class, 'store']);
+
+//Alhamdulillah terimakasih pak
