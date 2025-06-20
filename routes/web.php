@@ -8,6 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\MinumanController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\KeranjangController;
 
 Route::get('/', function () {
     $nama ='Fawwaz 092';
@@ -90,3 +91,9 @@ Route::get('/karyawan/edit/{id}',[KaryawanController::class, 'edit']);
 Route::post('/karyawan/update',[KaryawanController::class, 'update']);
 Route::get('/karyawan/hapus/{id}',[KaryawanController::class, 'hapus']);
 Route::get('/karyawan/cari',[KaryawanController::class, 'cari']);
+
+// TUGAS CRUD LATIHAN EAS PEREMPUAN
+Route::get('/keranjang', [KeranjangController::class, 'index']);
+Route::get('/keranjang/tambah', [KeranjangController::class, 'tambah1']);
+Route::post('/keranjang/store', [KeranjangController::class, 'store1']);
+Route::get('/keranjang/hapus/{id}', [KeranjangController::class, 'hapus1']);
